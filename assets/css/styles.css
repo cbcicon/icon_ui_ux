@@ -1,0 +1,131 @@
+/* COLOR THEMES */
+@import url('themes.css');
+
+/* LOGIN PAGE STYLES */
+.login-form-box{
+    width: 450px;
+}
+.login-bg{
+    background: url('../images/login-bg.png') no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 100vh;
+}
+.bar-throgh{
+    font-size: var(--fs-12);
+    margin-bottom: 30px;
+    position: relative;
+}
+.bar-throgh::before{
+    content: '';
+    border-bottom: 1px solid var(--grey-40);
+    position:absolute;
+    left: 0;
+    width: 100%;
+    top: 9px;
+    z-index: 0;
+}
+.bar-throgh>span{
+    background-color: var(--bg-white);
+    z-index: 1;
+    position: relative;
+    padding: 20px;
+}
+
+/* SIDE PANAL STYLES */
+aside{
+    width: 15.15em;
+    background-color: var(--bg-white);
+    height: 100vh;
+    box-shadow: var(--right-shadow) !important;
+    overflow-y: auto;
+}
+.logo-section{
+    position:sticky;
+    top: 0;
+    z-index: 3;
+    background-color: var(--bg-white);
+}
+header{
+    background-color: var(--bg-white);
+    padding: 5px 15px;
+    width: 100%;
+    box-shadow: var(--right-shadow);
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+.page-wrapper{
+    width: 100%;
+    background-color: var(--page-bg);
+}
+.body-wrapper{
+    padding: 1em;
+}
+.accordion-flush>.sidenav-menu>.accordion-header .accordion-button, .accordion-flush>.sidenav-menu>.accordion-header .accordion-button.collapsed{
+    padding: 5px;
+    border-radius: 5px;
+}
+.accordion-flush>.sidenav-menu, .accordion-flush>.sidenav-menu:first-child{
+    border: 0 !important;
+    margin-bottom: 10px;
+}
+.sidenav-menu > .accordion-button{
+    padding:8px;
+    font-size: var(--fs-14) !important;
+    letter-spacing: normal;
+    align-items: center;
+}
+.sidenav-menu > .accordion-button > .menu-icon{
+    font-size: var(--fs-16);
+    margin-right: 10px;
+}
+.sidenav-menu > .accordion-button:hover{
+    border-radius: 5px;
+    background-color: var(--primary-20);
+}
+.accordion-button:not(.collapsed){
+    border-radius: 5px;
+    background-color: var(--primary-40);
+}
+.sidenav-menu > .accordion-button::after{
+    background-size: 14px;
+    background-position: center;
+}
+.sidenav-menu > .accordion-button:focus{
+    box-shadow: none;
+}
+.sidenav-menu-li{
+    padding: 8px;
+    font-size: var(--fs-14) !important;
+    letter-spacing: normal;
+    width: 100%;
+    text-align: start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.sidenav-menu-li > .menu-icon{
+    font-size: var(--fs-16);
+    margin-right: 5px;
+}
+.sidenav-menu-li:hover{
+    border-radius: 5px;
+    background-color: var(--primary-20);
+}
+.navsub-menu{
+    border-radius: 5px;
+    margin-top: 2px;
+}
+.navsub-menu > li{
+    background-color: var(--primary-20);
+}
+.navsub-menu > li:hover{
+    background-color: var(--primary-10);
+    cursor: pointer;
+}
+.offcanves-lg{
+    width: 600px !important;
+}
+.offcanves-md{
+    width: 500px !important;
+}
